@@ -81,7 +81,21 @@ module.exports = {
   ],
   optimization: {
     splitChunks: {
-      chunks: 'all'
+      chunks: 'all',
+      cacheGroups: {
+        // split common utils
+        commons: {
+          name: 'commons',
+          chunks: 'initial',
+          minChunks: 2
+        }, 
+        //  split react & redux to vendor
+        vendor: {
+          test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+          name: 'vendor',
+          chunks: 'all',
+        }
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import LogoImg from 'assets/logo.jpg'
 import style from './style.css'
+
 export interface Props {
   name: string
 }
