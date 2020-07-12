@@ -11,21 +11,21 @@ const envPreset = [
 ];
 
 module.exports = function (api) {
-  api.cache(true)
+  api.cache(true);
   const presets = [
     // @babel/preset-env 可以让 babel 根据我们配置的 browserslist 只添加需要转换的语法和 polyfill
     envPreset,
     // 转换 tsx 成 js 代码
-    "@babel/preset-typescript",
+    '@babel/preset-typescript',
     // 集成了一些针对 react 项目的实用的插件
-    "@babel/preset-react",        
+    '@babel/preset-react',
   ];
   const plugins = [
     // "@babel/plugin-transform-runtime",
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-proposal-object-rest-spread",
+    '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-proposal-optional-chaining',
-    "@babel/plugin-syntax-dynamic-import"
+    '@babel/plugin-syntax-dynamic-import',
   ];
 
   return {

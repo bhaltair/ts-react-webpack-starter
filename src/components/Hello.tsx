@@ -1,23 +1,21 @@
-import * as React from 'react'
-import LogoImg from 'assets/logo.jpg'
-import style from './style.css'
+import * as React from 'react';
+import LogoImg from 'assets/logo.jpg';
+import style from './style.css';
 
-export interface Props {
-  name: string
-}
+type IProps = {
+  name: string;
+};
 
-function Hello({ name }: Props) {
+function Hello({ name }: IProps): JSX.Element {
   if (process.env.NODE_ENV === 'development') {
     console.log('Welcome to development');
   }
   return (
-    <div className={ style.hello }>
-      <img src={ LogoImg } alt="logo.jpg"/>
-      <div className="greeting">
-        Hello { name }
-      </div>
+    <div className={style.hello}>
+      <img src={LogoImg} alt="logo.jpg" />
+      <div className="greeting">Hello {name}</div>
     </div>
-  )
+  );
 }
 
-export default Hello
+export default Hello;

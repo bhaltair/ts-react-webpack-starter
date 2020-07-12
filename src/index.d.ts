@@ -1,5 +1,5 @@
-declare module '*.css'
-declare module "*.png"
-declare module "*.jpg"
-declare module "*.scss"
-declare module "*.less"
+declare module '*.css';
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.scss';
+declare module '*.less';
