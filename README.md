@@ -14,7 +14,7 @@
     - html-webpack-plugin
 - Loaders
   - parse ts file
-    - ts-loader ( or you can choose @babel-preset-typescript )
+    - ts-loader ( or you can choose @babel-loader )
   - parse css file
     - open css modules
     - style-loader
@@ -24,9 +24,11 @@
     - file-loader
 - Optimization
   - Separate code
-  - splitChunks
+    - splitChunks
   - webpack-dev-server
+    - hot reload
   - html-webpack-plugin
+    - inject css
 
 ## reference
 
